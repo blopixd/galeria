@@ -1,4 +1,4 @@
-package com.example.bdt;
+package com.example.galarteia;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,8 +18,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.galarteia.R;
+
 public class MainActivity extends AppCompatActivity {
-    int [] zdjecia = {R.drawable.bibo1,R.drawable.bibo2,R.drawable.bibo3,R.drawable.bibo4,R.drawable.bibo5,};
+    int [] zdjecia = {R.drawable.bibo1, R.drawable.bibo2, R.drawable.bibo3, R.drawable.bibo4, R.drawable.bibo5,};
     private Button next;
     private Button prev;
     private ImageView zdj;
