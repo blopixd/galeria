@@ -99,14 +99,10 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                if(charSequence.toString().isBlank()){
-                    zdj.setImageResource(zdjecia[0]);
-                }
-                else if (charSequence.toString()=="0" || charSequence.toString()=="1" || charSequence.toString()=="2" || charSequence.toString()=="3" || charSequence.toString()=="4") {
-                    zdj.setImageResource(zdjecia[Integer.parseInt(charSequence.toString())]);
-                }
-                else {
-                    zdj.setImageResource(zdjecia[0]);
+                if(!charSequence.toString().isEmpty()) {
+                    if (Integer.parseInt(charSequence.toString()) >= 0 && Integer.parseInt(charSequence.toString()) <= zdjecia.length) {
+                        zdj.setImageResource(zdjecia[Integer.parseInt(charSequence.toString())]);
+                    }
                 }
             }
         });

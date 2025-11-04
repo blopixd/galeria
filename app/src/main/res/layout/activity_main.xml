@@ -38,7 +38,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="PREV" />
+            android:text="PREV"
+            android:backgroundTint="#004C40"/>
 
         <TextView
             android:id="@+id/textView2"
@@ -51,7 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="NEXT" />
+            android:text="NEXT"
+            android:backgroundTint="#004C40"/>
     </LinearLayout>
 
     <LinearLayout
@@ -79,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="number" />
     </LinearLayout>
 
     <Switch
